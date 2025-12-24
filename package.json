@@ -27,7 +27,7 @@
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "sideEffects": false,
+  "sideEffects": true,
   "scripts": {
     "dev": "vite",
     "check-types": "tsc --noEmit --p ./tsconfig.build.json",
