@@ -1,6 +1,5 @@
-import { globalIgnores } from 'eslint/config'
-
-import {createConfig} from "@nik7i3/eslint-config"
+import { globalIgnores } from "eslint/config";
+import { createConfig } from "@nik7i3/eslint-config";
 
 export default createConfig({
   platform: "web",
@@ -21,6 +20,12 @@ export default createConfig({
     }
   },
   extends: [
-    globalIgnores(['dist']),
+    globalIgnores(["dist"]),
+    {
+      rules: {
+        "@typescript-eslint/no-explicit-any": ["off"],
+        "@typescript-eslint/prefer-optional-chain": ["off"]
+      }
+    }
   ]
-})
+});

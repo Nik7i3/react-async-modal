@@ -5,6 +5,9 @@
 
     /* Bundler mode */
     "allowImportingTsExtensions": true,
+
+    // TODO: check it in tsconfig package
+    "exactOptionalPropertyTypes": false
   },
-  "include": ["src"]
+  "include": ["src", "lib"]
 }
